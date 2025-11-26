@@ -1,0 +1,44 @@
+<%-include('../cabecalho.ejs')%>
+<section class="section">
+    <div style="display:flex; align-items:end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div>
+            <h2>Adicionar Jogador</h2>
+            <p>Cadastre um novo jogador</p>
+        </div>
+    </div>
+
+    <div class="form-wrap" style="margin-top:24px;">
+        <form action="/jogadores/addok" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome do Jogador</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nometi">Time</label>
+                <input type="text" id="nometi" name="nometi" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="posicao">Posição</label>
+                <input type="text" id="posicao" name="posicao" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="altura">Altura (cm)</label>
+                <input type="text" id="altura" name="altura" placeholder="Ex: 185 cm" required>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn primary">Cadastrar Jogador</button>
+                <a href="/jogadores/lst" class="btn secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</section>
+<%-include('../rodape.ejs')%>

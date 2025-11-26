@@ -1,0 +1,38 @@
+<%-include('../cabecalho.ejs')%>
+<header>
+    <h3>Adicionar Novo Filme</h3>
+</header>
+<div class="content">
+    <form id="form-filmes" autocomplete="off" action="/filme/addok" method="POST" enctype="multipart/form-data">
+        <div class="grid">
+             <div>
+              <label for="foto">Foto da Série</label>
+              <input id="foto" name="foto" type="file">
+            </div>
+            <div>
+                <label for="nome">Nome do Filme</label>
+                <input id="nome" name="nome" type="text" placeholder="Ex: Homem Aranha" required>
+            </div>
+            <div>
+                <label for="duracao">Duração (minutos)</label>
+                <input id="duracao" name="duracao" type="number" placeholder="Ex: 120" min="1" required>
+            </div>
+            <div>
+                <label for="ano">Ano</label>
+                <input id="ano" name="ano" type="number" placeholder="Ex: 2023" min="1900" max="2030" required>
+            </div>
+            <div>
+                
+                <label for="dublagem">
+                    <input id="dublagem" name="dublagem" type="checkbox" value="true">
+                    Dublagem Disponível
+                </label>
+            </div>
+        </div>
+        <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/filme/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar Filme</button>
+        </footer>
+    </form>
+</div>
+<%-include('../rodape.ejs')%>

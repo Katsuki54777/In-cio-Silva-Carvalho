@@ -1,0 +1,27 @@
+     <%-include('../cabecalho.ejs')%>
+     <header>
+        <h3>Adicionar Novo Plano</h3>
+      </header>
+      <div class="content">
+        <form id="form-times" autocomplete="off" action="/plano/addok" method="POST">
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do plano</label>
+              <input id="nome" name="nome" type="text" placeholder="Ex: Plano Ouro" required>
+            </div>
+            <div>
+              <label for="mensalidade">Mensalidade</label>
+              <input id="mensalidade" name="mensalidade" type="text" placeholder="Ex: R$ 99,90" required>
+            </div>
+            <div>
+              <label for="anuidade">Anuidade</label>
+              <input id="anuidade" name="anuidade" type="text" placeholder="Ex: R$ 999,90" required>
+            </div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/plano/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar Plano</button>
+          </footer>
+        </form>
+      </div>
+
+      <%-include('../rodape.ejs')%>

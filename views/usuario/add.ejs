@@ -1,0 +1,31 @@
+     <%-include('../cabecalho.ejs')%>
+     <header>
+        <h3>Adicionar Novo Usuário</h3>
+      </header>
+      <div class="content">
+        <form id="form-times" autocomplete="off" action="/usuario/addok" method="POST">
+          <div class="grid">
+            <div>
+              <label for="nome">Nome do Usuário</label>
+              <input id="nome" name="nome" type="text" placeholder="Ex: João da Silva" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Ex: joao@example.com" required>
+            </div>
+            <div>
+              <label for="senha">Senha</label>
+              <input id="senha" name="senha" type="password" placeholder="Digite a senha" required>
+            </div>
+            <div>
+              <label for="data">Data</label>
+              <input id="data" name="data" type="text" placeholder="Ex: 01/01/2023" required>
+            </div>
+          </div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/usuario/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar Usuário</button>
+          </footer>
+        </form>
+      </div>
+      <%-include('../rodape.ejs')%>

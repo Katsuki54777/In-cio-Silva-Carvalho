@@ -1,0 +1,36 @@
+     <%-include('../cabecalho.ejs')%>
+     <header>
+        <h3>Adicionar Nova Série</h3>
+      </header>
+      <div class="content">
+        <form id="form-times" autocomplete="off" action="/serie/addok" method="POST" enctype="multipart/form-data">
+          <div class="grid">
+            <div>
+              <label for="foto">Foto da Série</label>
+              <input id="foto" name="foto" type="file">
+            </div>
+            <div>
+              <label for="nome">Nome da Série</label>
+              <input id="nome" name="nome" type="text" placeholder="Ex: Supernatural" required>
+            </div>
+            <div>
+              <label for="temporada">Número de Temporadas</label>
+              <input id="temporada" name="temporada" type="text" placeholder="Ex: 15" required>
+            </div>
+            <div>
+              <label for="ano">Ano</label>
+              <input id="ano" name="ano" type="text" placeholder="Ex: 2005" required>
+            </div>
+            <div>
+              <label for="autor">Autor</label>
+              <input id="autor" name="autor" type="text" placeholder="Ex: Autor da Série" required>
+            </div>
+            </div>
+          <footer>
+            <a type="button" class="btn ghost" id="btn-cancelar" href="/serie/lst">Cancelar</a>
+            <button type="submit" class="btn primary">Adicionar Série</button>
+          </footer>
+        </form>
+      </div>
+
+      <%-include('../rodape.ejs')%>

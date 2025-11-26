@@ -1,0 +1,39 @@
+<%-include('../cabecalho.ejs')%>
+<section class="section">
+    <div style="display:flex; align-items:end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div>
+            <h2>Editar Série</h2>
+            <p>Edite as informações da série</p>
+        </div>
+    </div>
+
+    <div class="form-wrap" style="margin-top:24px;">
+        <form action="/serie/edt/<%= serie._id %>" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome da Série</label>
+                <input type="text" id="nome" name="nome" value="<%= serie.nome %>" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="temporada">Temporada</label>
+                <input type="text" id="temporada" name="temporada" value="<%= serie.temporada %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <input type="text" id="ano" name="ano" value="<%= serie.ano %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor" value="<%= serie.autor %>" required>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn primary">Salvar Alterações</button>
+                <a href="/serie/lst" class="btn secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</section>
+<%-include('../rodape.ejs')%>

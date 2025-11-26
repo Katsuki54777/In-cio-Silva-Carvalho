@@ -1,0 +1,47 @@
+<%-include('../cabecalho.ejs')%>
+<section class="section">
+    <div style="display:flex; align-items:end; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+        <div>
+            <h2>Editar Filme</h2>
+            <p>Edite as informações do filme</p>
+        </div>
+    </div>
+
+    <div class="form-wrap" style="margin-top:24px;">
+        <form action="/filme/edt/<%= filme._id %>" method="POST">
+            <div>
+              <label for="foto">Foto da Série</label>
+              <input id="foto" name="foto" type="file">
+            </div>
+           
+            <div class="form-group">
+                <label for="nome">Nome do Filme</label>
+                <input type="text" id="nome" name="nome" value="<%= filme.nome %>" required>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="duracao">Duração</label>
+                <input type="text" id="duracao" name="duracao" value="<%= filme.duracao %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ano">Ano</label>
+                <input type="text" id="ano" name="ano" value="<%= filme.ano %>" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dublagem">
+                    <input id="dublagem" name="dublagem" type="checkbox" value="true">
+                    Dublagem Disponível
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn primary">Salvar Alterações</button>
+                <a href="/filme/lst" class="btn secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</section>
+<%-include('../rodape.ejs')%>
