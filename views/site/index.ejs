@@ -587,217 +587,226 @@
     <!-- Main Content -->
     <main>
         <!-- Filmes em Destaque -->
-        <section id="filmes">
-            <h2>Filmes em Destaque</h2>
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1762356121454-877acbd554bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBtb3ZpZSUyMHBvc3RlcnxlbnwxfHx8fDE3NjMwMDQwOTd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Ação Extrema">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.5
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Ação Extrema</h3>
-                    <div class="movie-info">
-                        <span>2023</span>
-                        <span>•</span>
-                        <span>Ação</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1590562177087-ca6af9bb82ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2ktZmklMjBtb3ZpZXxlbnwxfHx8fDE3NjI5OTQ4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Viagem Intergaláctica">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.8
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Viagem Intergaláctica</h3>
-                    <div class="movie-info">
-                        <span>2024</span>
-                        <span>•</span>
-                        <span>Ficção Científica</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1664249558732-7a779ec1321a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFtYSUyMGZpbG18ZW58MXx8fHwxNjMwMDEyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Drama Urbano">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.3
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Drama Urbano</h3>
-                    <div class="movie-info">
-                        <span>2023</span>
-                        <span>•</span>
-                        <span>Drama</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1758525862250-5d1f64dc140b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aHJpbGxlciUyMG1vdmllfGVufDF8fHx8MTc2Mjk2MDQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="O Segredo Oculto">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.6
-                            </div>
-                        </div>
-                    </div>
-                    <h3>O Segredo Oculto</h3>
-                    <div class="movie-info">
-                        <span>2024</span>
-                        <span>•</span>
-                        <span>Suspense</span>
-                    </div>
-                </div>
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="<% filmes.forEach(i => { %><%=i.foto%><% }) %>" alt="Homem Aranha">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.3
-                            </div>
-                        </div>
-                    </div>
-                 <h3>Homem Aranha</h3>
-                    <div class="movie-info">
-                      <span>2003</span>
-                      <span>•</span>
-                      <span>Ficção Científica</span>
-                        <% filmes.forEach(i => { %>
-                      <tr>
-                      <td><%= i.nome %></td>
-                      <td><%= i.duracao %></td>
-                      <td><%= i.ano %></td>
-                      <td><%= i.dublagem %></td>
-                     
-                     </tr>
-                     <% }) %>
-         
-                    </div>
-            </div>
-            
-         
-        
-        </section>
-
-        <!-- Séries Populares -->
-        <section id="series">
-            <h2>Séries Populares</h2>
-            <div class="movie-grid">
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1678529262996-a75ab8d146b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxteXN0ZXJ5JTIwc2hvd3xlbnwxfHx8fDE3NjMwNTg5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mistérios da Noite">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.7
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Mistérios da Noite</h3>
-                    <div class="movie-info">
-                        <span>2024</span>
-                        <span>•</span>
-                        <span>Mistério</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0diUyMHNlcmllc3xlbnwxfHx8fDE3NjMwNTg5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Aventuras Urbanas">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.4
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Aventuras Urbanas</h3>
-                    <div class="movie-info">
-                        <span>2023</span>
-                        <span>•</span>
-                        <span>Drama</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1590562177087-ca6af9bb82ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2ktZmklMjBtb3ZpZXxlbnwxfHx8fDE3NjI5OTQ4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cosmos Desconhecido">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.9
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Cosmos Desconhecido</h3>
-                    <div class="movie-info">
-                        <span>2024</span>
-                        <span>•</span>
-                        <span>Ficção Científica</span>
-                    </div>
-                </div>
-
-                <div class="movie-card">
-                    <div class="movie-poster">
-                        <img src="https://images.unsplash.com/photo-1758525862250-5d1f64dc140b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aHJpbGxlciUyMG1vdmllfGVufDF8fHx8MTc2Mjk2MDQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Código Criminal">
-                        <div class="movie-overlay">
-                            <div class="movie-rating">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                                </svg>
-                                4.5
-                            </div>
-                        </div>
-                    </div>
-                    <h3>Código Criminal</h3>
-                    <div class="movie-info">
-                        <span>2023</span>
-                        <span>•</span>
-                        <span>Crime</span>
+<section id="filmes">
+    <h2>Filmes em Destaque</h2>
+    <div class="movie-grid">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1762356121454-877acbd554bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBtb3ZpZSUyMHBvc3RlcnxlbnwxfHx8fDE3NjMwMDQwOTd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Ação Extrema">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.5
                     </div>
                 </div>
             </div>
-            <% series.forEach(i => { %>
-          <tr>
-            <td><%= i.nome %></td>
-            <td><%= i.temporada %></td>
-            <td><%= i.ano %></td>
-            <td><%= i.autor %></td>
-            <td><img src="<%=i.foto%>" width="150" height="150"></td>
-          </tr>
+            <h3>Ação Extrema</h3>
+            <div class="movie-info">
+                <span>2023</span>
+                <span>•</span>
+                <span>Ação</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1590562177087-ca6af9bb82ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2ktZmklMjBtb3ZpZXxlbnwxfHx8fDE3NjI5OTQ4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Viagem Intergaláctica">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.8
+                    </div>
+                </div>
+            </div>
+            <h3>Viagem Intergaláctica</h3>
+            <div class="movie-info">
+                <span>2024</span>
+                <span>•</span>
+                <span>Ficção Científica</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1664249558732-7a779ec1321a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkcmFtYSUyMGZpbG18ZW58MXx8fHwxNjMwMDEyfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Drama Urbano">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.3
+                    </div>
+                </div>
+            </div>
+            <h3>Drama Urbano</h3>
+            <div class="movie-info">
+                <span>2023</span>
+                <span>•</span>
+                <span>Drama</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1758525862250-5d1f64dc140b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aHJpbGxlciUyMG1vdmllfGVufDF8fHx8MTc2Mjk2MDQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="O Segredo Oculto">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.6
+                    </div>
+                </div>
+            </div>
+            <h3>O Segredo Oculto</h3>
+            <div class="movie-info">
+                <span>2024</span>
+                <span>•</span>
+                <span>Suspense</span>
+            </div>
+        </div>
+
+        <!-- Filmes do MongoDB -->
+        <% filmes.forEach(filme => { %>
+            <% if (filme.nome === 'Homem Aranha' || filme.nome === 'Bleach The Movie: Hell Verse') { %>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="<%= filme.foto %>" alt="<%= filme.nome %>">
+                        <div class="movie-overlay">
+                            <div class="movie-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <%= filme.avaliacao || '3.0' %>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><%= filme.nome %></h3>
+                    <div class="movie-info">
+                        <span><%= filme.ano %></span>
+                        <span>•</span>
+                        <span><%= filme.genero %></span>
+                    </div>
+                </div>
+            <% } %>
         <% }) %>
-        </section>
+    </div>
+</section>
 
+<!-- Séries Populares -->
+<section id="series">
+    <h2>Séries Populares</h2>
+    <div class="movie-grid">
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1678529262996-a75ab8d146b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxteXN0ZXJ5JTIwc2hvd3xlbnwxfHx8fDE3NjMwNTg5ODB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Mistérios da Noite">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.7
+                    </div>
+                </div>
+            </div>
+            <h3>Mistérios da Noite</h3>
+            <div class="movie-info">
+                <span>2024</span>
+                <span>•</span>
+                <span>Mistério</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0diUyMHNlcmllc3xlbnwxfHx8fDE3NjMwNTg5Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Aventuras Urbanas">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.4
+                    </div>
+                </div>
+            </div>
+            <h3>Aventuras Urbanas</h3>
+            <div class="movie-info">
+                <span>2023</span>
+                <span>•</span>
+                <span>Drama</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1590562177087-ca6af9bb82ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2ktZmklMjBtb3ZpZXxlbnwxfHx8fDE3NjI5OTQ4MzN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Cosmos Desconhecido">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.9
+                    </div>
+                </div>
+            </div>
+            <h3>Cosmos Desconhecido</h3>
+            <div class="movie-info">
+                <span>2024</span>
+                <span>•</span>
+                <span>Ficção Científica</span>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="movie-poster">
+                <img src="https://images.unsplash.com/photo-1758525862250-5d1f64dc140b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0aHJpbGxlciUyMG1vdmllfGVufDF8fHx8MTc2Mjk2MDQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Código Criminal">
+                <div class="movie-overlay">
+                    <div class="movie-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        4.5
+                    </div>
+                </div>
+            </div>
+            <h3>Código Criminal</h3>
+            <div class="movie-info">
+                <span>2023</span>
+                <span>•</span>
+                <span>Crime</span>
+            </div>
+        </div>
+
+        <!-- Séries do MongoDB -->
+        <% series.forEach(serie => { %>
+            <% if (serie.nome === 'Supernatural') { %>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <img src="<%= serie.foto %>" alt="<%= serie.nome %>">
+                        <div class="movie-overlay">
+                            <div class="movie-rating">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <%= serie.avaliacao || '4.8' %>
+                            </div>
+                        </div>
+                    </div>
+                    <h3><%= serie.nome %></h3>
+                    <div class="movie-info">
+                        <span><%= serie.ano %></span>
+                        <span>•</span>
+                        <span><%= serie.genero %></span>
+                    </div>
+                </div>
+            <% } %>
+        <% }) %>
+    </div>
+</section>
         <!-- Planos -->
         <section class="pricing-section" id="planos">
             <div class="pricing-header">
