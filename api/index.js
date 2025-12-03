@@ -20,7 +20,7 @@ const upload = multer({ storage });
 
 //Liberar acesso a pasta public
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { dirname, join } from 'path';
 import { stat } from 'fs';
 import Usuario from '../models/usuario.js';
 import Series from '../models/serie.js';
@@ -31,6 +31,8 @@ import Planos from '../models/plano.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 app.use(express.static(__dirname + '../public'))
+app.use(express.static(join(__dirname, '../public')));
+app.set('views', join(__dirname, '../views'));
 
 //rotas
 app.get('/', (req, res) => {
