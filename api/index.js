@@ -2,12 +2,12 @@ import { createServer } from 'http';
 
 import express from 'express'
 const app = express();
-//importar os modelos
+/*importar os modelos
 
 import Time from './models/time.js'
 import Jogadores from './models/jogadores.js'
 import Torneios from './models/torneios.js'
-
+*/
 
 app.use(express.urlencoded({extended:true}))
 app.set('view engine', 'ejs')
