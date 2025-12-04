@@ -1,40 +1,39 @@
-import { createServer } from 'http';
-
-import express from 'express'
-const app = express();
-/*importar os modelos
-
-import Time from './models/time.js'
-import Jogadores from './models/jogadores.js'
-import Torneios from './models/torneios.js'
-*/
-
-app.use(express.urlencoded({extended:true}))
-app.set('view engine', 'ejs')
-
-//upload de fotos
-import multer from 'multer';
-
-const storage = multer.memoryStorage();
-const upload = multer({ storage });
-
-//Liberar acesso a pasta public
+import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { stat } from 'fs';
+
+import { createServer } from 'http';
+
+const app = express();
+
+app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+
+// Caminho correto das views e public
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+// COLOCAR OS MODELS AQUI (colocar o caminho ../)
+
 import Usuario from '../models/usuario.js';
 import Series from '../models/serie.js';
 import Filmes from '../models/filme.js';
 import Planos from '../models/plano.js';
 
-// Converte o caminho do arquivo atual
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-app.use(express.static(__dirname + '../public'))
-app.use(express.static(join(__dirname, '../public')));
+
+
+//FIM MODELS
+
+// Servir arquivos estáticos
+//app.use(express.static(join(__dirname, '../public')));
 app.set('views', join(__dirname, '../views'));
 
-//rotas
+// Rotas
+import multer from 'multer';
+
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
+
+// COLOCAR AS ROTAS AQUI
 app.get('/', (req, res) => {
     res.render("index")
 })
@@ -438,4 +437,8 @@ app.get('/site', async (req, res) =>{
 })
 
 
+
+//FIM ROTAS
 app.listen(3007)
+// Exporta o handler compatível com Vercel
+export default app;
