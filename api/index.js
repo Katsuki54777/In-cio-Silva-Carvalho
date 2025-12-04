@@ -430,7 +430,7 @@ res.render("usuario/edtok")
 
 //site
 
-app.get('/site', async (req, res) =>{
+app.get('../site', async (req, res) =>{
     const filmes = await Filmes.find()
     const series = await Series.find()
     res.render("site/index", {filmes, series})
